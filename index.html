@@ -1,0 +1,17 @@
+<input type="number" id="num1">
+
+<select id="operator">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+</select>
+
+<input type="number" id="num2">
+
+<button onclick="calculate()">Calculate</button>
+<button onclick="clearCalculator()">Clear</button>
+
+<p id="result"></p>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
